@@ -12,10 +12,11 @@ public class Three {
 		int[][] ar = new int[n][n]; //инициализирую масив
 
 		//заполняю массив значениями
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
+		for (int i = 0; i < ar.length; i++) {
+			for (int j = 0; j < ar.length; j++) {
 				if (i == j) {
-					ar[i][j] = n--;
+					ar[i][j] = 5;
+					
 				}
 			}
 

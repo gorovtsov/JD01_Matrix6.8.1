@@ -1,4 +1,4 @@
-//6.8.1.3
+//6.8.1.3 РћСЃРЅРѕРІРЅР°СЏ РґРёР°РіРѕРЅР°Р»СЊ
 package hw.gorovtsov.matrix.start;
 
 import hw.gorovtsov.matrix.logic.Input;
@@ -7,11 +7,11 @@ public class Three {
 
 	public static void main(String[] args) {
 		
-		int n = Input.nextInt(); //ввожу целое число
+		int n = Input.nextInt(); //РїСЂРёРЅРёРјР°СЋ С‡РёСЃР»Рѕ
 		
-		int[][] ar = new int[n][n]; //инициализирую масив
+		int[][] ar = new int[n][n]; //РёРЅРёС†РёР°Р»РёР·РёСЂСѓСЋ РјР°СЃСЃРёРІ РјР°СЃСЃРёРІРѕРІ
 
-		//заполняю массив значениями
+		//Р·Р°РїРѕР»РЅСЏСЋ РјР°СЃСЃРёРІ
 		for (int i = 0; i < ar.length; i++) {
 			for (int j = 0; j < ar.length; j++) {
 				if (i == j) {
@@ -22,7 +22,7 @@ public class Three {
 
 		}
 		
-		//вывожу
+		//РІС‹РІРѕР¶Сѓ
 		Input.printMatrix(ar);
 	}
 

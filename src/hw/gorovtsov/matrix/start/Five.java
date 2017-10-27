@@ -1,12 +1,11 @@
-//6.8.1.3 Основная диагональ
+//6.8.1.5
 package hw.gorovtsov.matrix.start;
 
 import hw.gorovtsov.matrix.logic.Input;
 
-public class Three {
+public class Five {
 
 	public static void main(String[] args) {
-
 		int n = Input.nextInt(); // принимаю число
 
 		int[][] ar = new int[n][n]; // инициализирую массив массивов
@@ -14,9 +13,8 @@ public class Three {
 		// заполняю массив
 		for (int i = 0; i < ar.length; i++) {
 			for (int j = 0; j < ar.length; j++) {
-				if (i == j) {
-					ar[i][j] = n--;
-
+				if ((i == 0) || (j == 0) || (i == ar.length-1) || (j == ar.length-1)) {
+					ar[i][j] = 1;
 				}
 			}
 

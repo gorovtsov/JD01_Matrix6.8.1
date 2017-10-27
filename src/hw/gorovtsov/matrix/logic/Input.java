@@ -9,10 +9,10 @@ public class Input {
 		
 		int x=0;
 		
-		System.out.println("Введите целое число: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 		while(!sc.hasNextInt()) {
 			sc.next();
-			System.out.println("Введите целое число: ");
+			System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 		}
 		x = sc.nextInt();
 		

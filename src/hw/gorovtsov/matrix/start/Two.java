@@ -11,21 +11,21 @@ public class Two {
 
 		int[][] ar = new int[n][n];
 
-		for (int i = n - 1; i > 0; i--) {
-			for (int j = n - 1; j > 0; j--) {
-				if (i == n - j ) {
-					ar[i][j-1] = n-i;
+		ar[0][n-1] = 1;
+
+		for (int i = 0; i < ar.length; i++) {
+			for (int j = 0; j < ar.length; j++) {
+				if ((j == ar.length - i)) {
+					ar[i][j - 1] = i + 1;
 				}
 			}
 
 		}
-		
-		ar[0][n-1] = n;
-		
+
 		printMat(ar);
 
 	}
-	
+
 	public static void printMat(int[][] ar) {
 		for (int i = 0; i < ar.length; i++) {
 			for (int j = 0; j < ar.length; j++) {
